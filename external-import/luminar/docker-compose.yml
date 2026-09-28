@@ -1,0 +1,26 @@
+version: "3"
+services:
+  connector-luminar:
+    image: opencti/connector-luminar:latest
+    build: .
+    environment:
+      - OPENCTI_URL=
+      - OPENCTI_TOKEN=
+      - CONNECTOR_ID=Luminar
+      - CONNECTOR_NAME=Luminar
+      - CONNECTOR_SCOPE=
+      - CONNECTOR_LOG_LEVEL=
+      - CONNECTOR_DURATION_PERIOD=
+      - LUMINAR_BASE_URL=
+      - LUMINAR_ACCOUNT_ID=
+      - LUMINAR_CLIENT_ID=
+      - LUMINAR_CLIENT_SECRET=
+      - LUMINAR_INITIAL_FETCH_DATE=
+      - LUMINAR_CREATE_OBSERVABLE=
+    restart: always
+    networks:
+      - opencti-net
+networks:
+  opencti-net:
+    external: true
+    name: xtm_default

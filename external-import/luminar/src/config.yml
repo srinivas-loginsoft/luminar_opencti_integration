@@ -1,0 +1,25 @@
+opencti:
+  url: "http://localhost:8080"
+  token: "210d20af-9e2e-409e-b4bd-98889d85b8b3"
+
+connector:
+  type: "EXTERNAL_IMPORT"
+  id: "Luminar"
+  name: "Luminar Threat Intelligence"
+  scope: "identity,attack-pattern,malware,tool,report,vulnerability,campaign,incident,indicator,location,threat-actor,software,useraccount"
+  log_level: "info"
+  duration_period: "P2D" # Interval given for scheduler process in ISO-8601 format
+
+luminar:
+  base_url: "https://demo.cyberluminar.com"
+  account_id: "00bed954-4b1a-4d52-97f7-2a2c51b824ff"
+  client_id: "Loginsoft-v2"
+  client_secret: "ICMXb1IDYigOAs4fw4WY20Gz5Xt1ysaF"
+  create_observable: True
+  initial_fetch_date: "2026-03-01"
+
+mq:
+  host: 172.18.0.9
+  port: 5672
+  user: opencti
+  pass: changeme

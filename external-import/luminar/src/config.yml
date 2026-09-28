@@ -1,6 +1,6 @@
 opencti:
   url: "http://localhost:8080"
-  token: "210d20af-9e2e-409e-b4bd-98889d85b8b3"
+  token: ""
 
 connector:
   type: "EXTERNAL_IMPORT"
@@ -11,12 +11,12 @@ connector:
   duration_period: "P2D" # Interval given for scheduler process in ISO-8601 format
 
 luminar:
-  base_url: "https://demo.cyberluminar.com"
-  account_id: "00bed954-4b1a-4d52-97f7-2a2c51b824ff"
-  client_id: "Loginsoft-v2"
-  client_secret: "ICMXb1IDYigOAs4fw4WY20Gz5Xt1ysaF"
+  base_url: ""
+  account_id: ""
+  client_id: ""
+  client_secret: ""
   create_observable: True
-  initial_fetch_date: "2026-03-01"
+  initial_fetch_date: ""
 
 mq:
   host: 172.18.0.9
